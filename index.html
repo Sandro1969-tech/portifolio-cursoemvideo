@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio-Gustavo Guanabara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/image/favicon.svg" type="image/svg" />
+    <script src="https://kit.fontawesome.com/97e61f7589.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="#ficha"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formação"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li>
+  <button id="botao-tema" style="background:none; border:none; color:inherit; cursor:pointer;">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ficha">
+            <img src="assets/image/guanabara-perfil.jpg" alt="gustavoguanabara" class="foto" />
+            <h1>Gustavo Guanabara</h1>
+            <p>Formado em Ciência da Computação, com especialização em docência superior, desenvolvimento web e Inteligência Artificial...</p>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/guanabara/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gustavoguanabara" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/cursoemvideo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/gustavoguanabara/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://cursoemvideo.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </section>
+
+        <section id="detalhes">
+            <article id="video">
+                <h2><i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <section id="skills">
+                <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
+                <div id="skill-container">
+                    <div class="item">
+                        <div class="info"><span class="nome">HTML</span><span class="porcent">90%</span></div>
+                        <div class="barra"><div class="progresso" style="width: 90%"></div></div>
+                    </div>
+                    <div class="item">
+                        <div class="info"><span class="nome">JavaScript</span><span class="porcent">80%</span></div>
+                        <div class="barra"><div class="progresso" style="width: 80%"></div></div>
+                    </div>
+                    <div class="item">
+                        <div class="info"><span class="nome">CSS</span><span class="porcent">95%</span></div>
+                        <div class="barra"><div class="progresso" style="width: 95%"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="projetos" class="projetos">
+                <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+                <div id="projeto-container">
+                    <div class="projeto">
+                        <img src="assets/image/projeto-01-videos.jpg" alt="projeto1" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto de vídeos</h3>
+                            <p>Projeto construído para treinar a inserção de vídeos.</p>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="assets/image/projeto-02-cordel.jpg" alt="projeto2" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto Cordel</h3>
+                            <p>Projeto de site de poesia.</p>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="assets/image/projeto-03-android.jpg" alt="projeto3" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto Android</h3>
+                            <p>Curiosidades sobre o mascote do Android.</p>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="assets/image/projeto-04-links.jpg" alt="projeto4" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto Links</h3>
+                            <p>Árvore de links personalizada.</p>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="assets/image/projeto-05-login.jpg" alt="projeto5" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto Login</h3>
+                            <p>Tela de login responsiva.</p>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="assets/image/projeto-06-album.jpg" alt="projeto6" class="foto-proj" />
+                        <div class="projeto-info">
+                            <p class="período">2022</p>
+                            <h3>Projeto Álbum</h3>
+                            <p>Galeria de fotos otimizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+      Portifólio desenvolvido por
+      <a href="https://www.gustavoguanabara.com.br/" target="_blank"
+        >Gustavo Guanabara</a
+      >.
+      <p>© 2025 Gustavo Guanabara. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js" defer></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const botao = document.getElementById("botao-tema");
+  const body = document.body;
+
+  botao.addEventListener("click", () => {
+    body.classList.toggle("escuro");
+    const icone = body.classList.contains("escuro")
+      ? '<i class="fa-solid fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = icone;
+  });
+});
+</script>
+</body>
+</html>

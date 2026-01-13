@@ -1,0 +1,144 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #222222;
+    --texto-inverso: #ffffff;
+    --destaque: #0077ff;
+    --destaque-inverso: #66bbff;
+    --fundo-card: #ffffff;
+}
+header, .projeto, section#ficha, article, #skills, .projetos {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --fundo-card: #444444;
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+    transition: 0.3s;
+}
+
+header {
+    background-color: var(--destaque);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav#menu ul { list-style: none; display: flex; gap: 10px; }
+nav#menu a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    padding: 12px 15px;
+    transition: 0.5s;
+}
+
+/* EFEITO HOVER NO MENU */
+nav#menu a:hover { background-color: var(--destaque-inverso); border-radius: 5px; }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section#ficha, article, #skills, .projetos {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section#ficha img.foto {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--fundo-card);
+    outline: 5px solid var(--destaque);
+    display: block;
+    margin: 0 auto 15px;
+}
+#social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#social a:hover {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  transform: rotate(10deg); /* gira um pouquinho */
+}
+
+#social { display: flex; justify-content: center; font-size: 1.7em; gap: 1em; }
+#social a { color: var(--destaque); }
+
+/* BARRAS DE PROGRESSO */
+.barra { width: 100%; height: 8px; background-color: #ccc; border-radius: 4px; margin-bottom: 15px;}
+.progresso { height: 100%; background-color: var(--destaque-inverso); border-radius: 4px; }
+
+/* PROJETOS E O EFEITO HOVER QUE VOCÊ CRIOU */
+#projeto-container { display: flex; flex-direction: column; gap: 20px; }
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.projeto:hover {
+    border-left-width: 15px; /* A borda estica como você queria */
+    border-color: var(--destaque);
+    cursor: pointer;
+}
+
+.foto-proj { width: 100%; height: 200px; object-fit: cover; }
+.projeto-info { padding: 15px; }
+
+/* VIDEO RESPONSIVO */
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    margin-top: 20px;
+
+}
+footer a {
+    color: var(--texto-inverso);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+/* DESKTOP LAYOUT */
+@media screen and (min-width: 900px) {
+    main { grid-template-columns: 350px 1fr; }
+    .projeto { flex-direction: row; }
+    .foto-proj { width: 250px; height: auto; }
+}
